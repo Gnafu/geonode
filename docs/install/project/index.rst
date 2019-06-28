@@ -5,6 +5,9 @@ The following steps will guide you to a new setup of GeoNode Project. All guides
 
 Those guides **are not** meant to be used on a production system. There will be dedicated chapters that will show you some *hints* to optimize GeoNode for a production-ready machine. In any case, we strongly suggest to task an experienced *DevOp* or *System Administrator* before exposing your server to the ``WEB``.
 
+.. contents::
+   :depth: 4
+
 Ubuntu 18.04
 ============
 
@@ -80,6 +83,9 @@ First, we are going to install all the **system packages** needed for the GeoNod
 
   # Install Packages for Virtual environment management
   sudo apt install -y virtualenv virtualenvwrapper
+  
+  # Install text editor
+  sudo apt install -y vim
 
 Geonode Project Installation
 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^
@@ -90,7 +96,7 @@ Inside the project structure is possible to extend, replace or modify all geonod
 
 .. note:: You can call your geonode project whatever you like following the naming conventions for python packages (generally lower case with underscores (_). In the examples below, replace ``my_geonode`` with whatever you would like to name your project.
 
-See also the `README <https://github.com/GeoNode/geonode-project/blob/master/README.rst>`_ fiel on geonode-project repository
+See also the `README <https://github.com/GeoNode/geonode-project/blob/master/README.rst>`_ file on geonode-project repository
 
 First of all we need to prepare a new Python Virtual Environment
 
@@ -174,7 +180,8 @@ Sign-in with::
   user: admin
   password: admin
 
-From now on, everything already said for GeoNode Core (plese refer to the section :ref:`configure_dbs_core` and following), applies to a 
+
+From now on, everything already said for GeoNode Core (please refer to the section :ref:`configure_dbs_core` and following), applies to a 
 GeoNode Project.
 
 **Be careful** to use the **new** paths and names everywhere:
